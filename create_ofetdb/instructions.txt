@@ -1,0 +1,23 @@
+This is a file containing instructions on how to create the tables in pgAdmin and insert seed OFET data into it.
+
+1. In pgAdmin, create a new database named "ofetdb_testenv" (or whatever you choose, so long as you have the db info saved).
+
+2. Ensure you have the appropriate Python libraries installed
+   
+   ```bash
+   pip install -r requirements.txt
+
+ 
+3. Run "create_ofetdb_tables.py," making sure that the kwargs/param_dict has the right database connection information, such as the database name, user/password, etc that you specified while creating the new database in pgAdmin.
+
+If the execution is successful, you should be able to see empty tables in pgAdmin under your database.
+
+4. In "import_combined_dataset.py," again check that the param_dict has the correct connection details. You can then run the file:
+
+python import_combined_dataset.py
+
+It may take several minutes to upload all database inserts, but monitor along the way to ensure there are no errors returned.
+
+5. If you encounter any issues or need to troubleshoot, sometimes deleting and recreating the database in pgAdmin will solve the problem.
+
+
