@@ -40,7 +40,7 @@ param_dict = {
     "host"      : "127.0.0.1",
     "database"  : "ofetdb_testenv",
     "user"      : "postgres",
-    "password"  : "Rahul2411!", #your  password here
+    "password"  : "password", #your  password here
     "port"      : "5432",
 }
 
