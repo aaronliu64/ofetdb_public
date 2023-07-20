@@ -3,11 +3,9 @@
 import pandas as pd
 import numpy as np
 import psycopg2 as pg
-import os
 from psycopg2.extras import Json
 from psycopg2.extensions import AsIs
 import functools
-import json
 import sys
 
 # %% Helper Functions
@@ -84,7 +82,7 @@ def row_to_json(a):
     ofetdb schema, converts to a json formatted dict. Must use Excel literature/expt template with dot notation"""
 
     output = {}
-    for key, value in a.iteritems():
+    for key, value in a.items():
         if pd.isnull(value) == False: #Only add key:value if not empty in the json
             path = key.split('.')
             target = functools.reduce(lambda d, k: d.setdefault(k, {}), path[:-1], output)
