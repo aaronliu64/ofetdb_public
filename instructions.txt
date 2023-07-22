@@ -6,13 +6,12 @@ This file contains instructions on how to add OFET data from a template to the d
 
 2. Create a new virtual environment for ofetdb, and then activate it using:
 
-` python -m venv <name_of_venv>
-` source <name_of_venv>/Scripts/activate
+` conda create -n <name_of_env> python=3.11.4
+` conda activate <name_of_env>
 
-Then, ensure you have the appropriate Python libraries installed (if initial fail, try upgrading pip using the first line below, before running the second one):
+Then, ensure you have the appropriate Python libraries installed:
 
    ```bash
-	`python -m pip install --upgrade pip
 	`pip install -r requirements.txt
 
 3. Change directory to "create_ofetdb". First, run the "create_ofetdb_tables.py", then "import_combined_dataset.py". Ensure that the kwargs/param_dict in the scripts contain the correct database connection information, 
