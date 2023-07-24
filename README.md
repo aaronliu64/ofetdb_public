@@ -5,6 +5,14 @@ In support of submitted manuscript:
 
 **Authors**: Aaron L. Liu, Myeongyeon Lee, Rahul Venkatesh, Jessica A. Bonsu, Ron Volkovinsky, J. Carson Meredith,  Elsa Reichmanis, Martha A. Grover
 
+### Contents:
+
+* `/create_ofetdb` - code for creating a local copy of OFET-db on a local server (see instructions below)
+* `/data_files` - data files used for attached code
+* `/schema` - documents containing conceptual schema 
+* `/template_data_transfer` - code and template files demonstrating new OFET record inserts to the repository
+* `/visualizer` - sample code for querying database for data retrieval, visualization, and/or analysis
+
 ### Instructions:
 
 This file contains instructions on how to add OFET data from a template to the database using the standardized excel template (`Sample_Template.xlsx`)
