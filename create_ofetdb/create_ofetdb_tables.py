@@ -5,10 +5,10 @@
 import psycopg2
 
 kwargs = {
-    'database': 'ofetdb_testenv',
-    'user': 'postgres',
-    'password': 'password',
-    'host': '127.0.0.1',
+    'database': 'ofetdb_v1',
+    'user': 'mg200_ofetdb',
+    'password': 'DB4CIOEED23!',
+    'host': 'chbe-ofet-db.postgres.database.azure.com',
     'port': '5432'
 }
 
