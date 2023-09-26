@@ -35,11 +35,11 @@ pg.extensions.register_adapter(np.int64, addapt_numpy_int64)
 pg.extensions.register_adapter(float, nan_to_null)
 
 param_dict = {
-    "host"      : "chbe-ofet-db.postgres.database.azure.com",
-    "database"  : "ofetdb_v1",
-    "user"      : "mg200_ofetdb",
-    "password"  : "DB4CIOEED23!", #your  password here
-    "port"      : "5432",
+    "host": "127.0.0.1",
+    "database": "ofetdb_testenv",
+    "user": "postgres",
+    "password": "password",
+    "port": "5432",
 }
 
 def connect(params_dict):
